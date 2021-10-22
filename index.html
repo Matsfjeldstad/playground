@@ -6,36 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/59e647382f.js" crossorigin="anonymous">
+</script>
+<script src="/js/script.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="inner">
-            <a href="/index.html"><img src="#" alt="logo"></a>
-            <nav>
-            <span class="search-icon"></span>
-            <span class="cart-icon"></span>
-            <span class="hamburger-menu-icon"></span>
-            </nav>
+            <a href="/index.html">
+                <img src="/img/RainyDays_Logo.png" alt="logo" class="nav-logo">
+            </a>
+                <div class="navigation-bar-icons">
+                    <label for="search-icon">
+                    <span class="sr-only">
+                        search icon
+                    </span> 
+                    <img src="/img/icons/3844467_magnifier_search_zoom_icon (1).svg" alt="search-icon" class="nav-icon search-icon">
+                    </label>
+                    <input type="checkbox" id="search-icon"/>
+                    <label for="cart-icon">
+                        <span class="sr-only">
+                            cart icon
+                        </span> 
+                        <img src="/img/icons/2703085_bag_cart_ecommerce_shop_icon (1).svg" alt="cart" class="nav-icon cart-icon">
+                    </label>
+                    <input type="checkbox" id="cart-icon"/>
+
+                    <label for="hamburger" onclick="openNav()">
+                        <span class="sr-only">
+                            Hamburger menu
+                        </span>
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <input type="checkbox" id="hamburger"/>
+                </div>
         </div>    
     </header>
+    <div id="myNav"class="mobile-menu">
+            <div class="inner">
+                <div class="logo-and-closebtn">
+                    <div class="opennav-logo">
+                        <img src="/img/RainyDays_Logo KVIT.png" alt="logo" class="nav-logo">
+                    </div>
+                    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+                </div>
+                
+                <ul>
+                    <li>Men <i class="fas fa-chevron-down"></i></li>
+                    <li>Women<i class="fas fa-chevron-down"></i></li>
+                    <li>About Us</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+        </div>
     <section class="hero-banner">
         <div class="inner">
-            <img src="" alt="jacket" class="jacket-hero">
-            <h1>
-            In it for the 
-            long haul.
-             /h1>
-            <h2>
-            Durable but sustainable materials.
-            Good for both you and the planet 
-            </h2>
-            <button><a href="#">Male jacket</a></button>
-            <button><a href="#">Female jacket</a></button>
-        </div>
+            <div class="img-cointainer">
+              <img src="/img/119fgg_shells_mntequip_bjk.png" alt="jacket" class="jacket-hero">
+            </div>
 
+            <div class="header-container">
+                <h1>
+                    In it for the<br>
+                    long haul.
+                </h1>
+                <h2>
+                    Durable but sustainable materials.
+                    Good for both you and the planet 
+                </h2>
+            </div>
+            <div class="hero-cta-button-container">
+                <button class="hero-button hero-male-cta">
+                <a href="#">MALE JACKETS</a>
+            </button>
+            <button class=" hero-button hero-female-cta">
+                <a href="#">FEMALE JACKETS</a>
+            </button>
+            </div>
+            
+        </div>
     </section>
 
     <section class="product-page new-arival">
@@ -71,7 +123,7 @@
     </section>
     <section class="cta-rain-jackets">
         <div class="male-cta">
-          <div class="img"></div>
+          <div class="cta-male-img"></div>
           <div class="inner">
           <h2>MALE RAIN JACKET</h2>
           <button class="cta-button-rain-jackets">Shop now</button>
