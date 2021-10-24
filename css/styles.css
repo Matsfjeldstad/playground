@@ -9,6 +9,7 @@ body {
 .inner {
   max-width: 987px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 header {
@@ -28,12 +29,37 @@ header .inner {
   width: 5.5em;
 }
 
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .navigation-bar-icons {
   display: flex;
   align-content: center;
   gap: 1.5em;
 }
 
+.icon-and-text span {
+  margin-right: 10px;
+  display: none;
+}
+
+.icon-and-text {
+  display: flex;
+  align-items: center;
+}
 .nav-icon {
   width: 1.5em;
 }
@@ -63,7 +89,6 @@ header input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 20px 0px 20px;
 }
 .close-btn {
   right: 0;
@@ -150,9 +175,212 @@ header input {
 }
 
 .hero-female-cta {
-  background-color: #f4a261;
+  background-color: #e76f51;
 }
 
 .hero-male-cta {
   background-color: #264653;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.jacket-img img {
+  width: 170px;
+}
+
+.jacket-img {
+  margin-top: 20px;
+}
+
+.Card-grid-heading {
+  text-transform: uppercase;
+}
+
+.product-grid h2 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.product-grid p {
+  margin: 0;
+}
+
+.product-card-description {
+  font-weight: 400;
+}
+
+.product-price {
+  font-size: 20px;
+}
+
+.cta-rain-jackets {
+  display: flex;
+  flex-direction: column;
+}
+.male-cta,
+.female-cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.male-cta .inner,
+.female-cta .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cta-male-img {
+  background-image: url(/img/kamil-kalbarczyk-lY11p3yNVxE-unsplash.jpg);
+  width: 100%;
+  height: 288px;
+  background-size: cover;
+  background-position: center;
+}
+.cta-female-img {
+  background-image: url(/img/johannes-andersson-8XQbEDaCbDM-unsplash.jpg);
+  width: 100%;
+  height: 288px;
+  background-size: cover;
+  background-position: center;
+}
+.cta-button-rain-jackets {
+  width: 166px;
+  height: 60px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid black;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.pro-flex-cta {
+  background-image: url(/img/fishing.png);
+  width: 100%;
+  height: 414px;
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+.pro-flex-cta .inner {
+  transform: scaleX(-1);
+  color: #fff;
+}
+
+.pro-flex-cta h2 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.pro-flex-cta p {
+  font-size: 20px;
+}
+
+.pro-flex-cta p span {
+  text-decoration: underline;
+}
+
+.pro-flex-cta-button {
+  background-color: black;
+  color: #fff;
+  border: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  width: 160px;
+  height: 40px;
+}
+
+footer {
+  background-color: #0a3641;
+  color: #fff;
+}
+
+footer p {
+  font-weight: 300;
+  margin: 0;
+}
+
+footer input {
+  margin-top: 20px;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+}
+
+.sosialmedia ul,
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+.sosialmedia ul li,
+.footer-nav ul li {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  height: 48px;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    gap: 40px;
+  }
+
+  .icon-and-text span {
+    display: block;
+  }
+  .hero-banner .inner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .hero-cta-button-container {
+    margin-top: 40px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 20px;
+  }
+
+  .cta-male-img,
+  .cta-female-img {
+    display: none;
+  }
+
+  .cta-rain-jackets {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+  }
+
+  .male-cta {
+    background-image: url(/img/kamil-kalbarczyk-lY11p3yNVxE-unsplash.jpg);
+  }
+  .female-cta {
+    background-image: url(/img/kamil-kalbarczyk-lY11p3yNVxE-unsplash.jpg);
+  }
 }
