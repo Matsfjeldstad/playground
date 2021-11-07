@@ -38,66 +38,77 @@
                     <img src="/img/icons/3844467_magnifier_search_zoom_icon (1).svg" alt="search-icon" class="nav-icon search-icon">
                     </label>
                     <input type="checkbox" id="search-icon"/>
-                    <label for="cart-icon" class="icon-and-text">
+                    <label for="cart-toggle" class="icon-and-text">
                         <span>
                             Cart
                         </span> 
                         <img src="/img/icons/2703085_bag_cart_ecommerce_shop_icon (1).svg" alt="cart" class="nav-icon cart-icon">
                     </label>
-                    <input type="checkbox" id="cart-icon"/>
-
-                    <label class="hamburger-menu"for="hamburger" onclick="openNav()">
+                    <input type="checkbox" id="cart-toggle"/>
+                    <div class="cart-container">
+                        <label for="cart-toggle" >
+                            <p class="close-btn">&times;</p>
+                        </label>
+                        <p>Shopping Bag (0)</p>
+                        <div class="button-container"> 
+                            <button class="cart-cta">Go to Cart</button>
+                        </div>
+                    </div>
+                    <label class="hamburger-menu"for="menu-toggle" >
                         <span class="sr-only">
                             Hamburger menu
                         </span>
                         <i class="fas fa-bars"></i>
                     </label>
-                    <input type="checkbox" id="hamburger"/>
+                    <input type="checkbox" id="menu-toggle"/>
+
+                    <div id="myNav"class="mobile-menu">
+                        <div class="mobile-menu-container">
+                            <div class="logo-and-closebtn">
+                                <div class="mobile-nav-logo">
+                                    <img src="/img/RainyDays_Logo KVIT.png" alt="logo" class="nav-logo">
+                                </div>
+                               <label for="menu-toggle">
+                                <a class="close-btn">&times;</a>
+                               </label>
+                            </div>
+                            
+                            <ul class="mobile-nav">
+                                <input type="checkbox" class="men-nav-chevron" id="men-chevron">
+                                <label for="men-chevron">
+                                    <li>Men </li>
+                                    <i class="fas fa-chevron-down"></i>
+                                </label> 
+                                
+                                <div class="mobile-nav-container-men">
+                                    <ul>
+                                        <li class="mobile-men-nav-item"><a>all products</a></li>
+                                        <li class="mobile-men-nav-item"><a>Rain jackets</a></li>
+                                        <li class="mobile-men-nav-item"><a>Ski jackets</a></li>
+                                        <li class="mobile-men-nav-item"><a>Pro-flex 2.0</a></li>
+                                    </ul>
+                                </div>
+                                <input type="checkbox" class="woman-nav-chevron" id="woman-chevron">
+                                <label for="woman-chevron">
+                                    <li>Women</li>
+                                    <i class="fas fa-chevron-down"></i>
+                                </label>
+                                <div class="mobile-nav-container-woman" >
+                                    <ul>
+                                        <li class="mobile-woman-nav-item"><a>all products</a></li>
+                                        <li class="mobile-woman-nav-item"><a>Rain jackets</a></li>
+                                        <li class="mobile-woman-nav-item"><a>Ski jackets</a></li>
+                                        <li class="mobile-woman-nav-item"><a>Pro-flex 2.0</a></li>
+                                    </ul>
+                                </div>
+                                <li>About Us</li>
+                                <li>Contact us</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
         </div>    
     </header>
-    <div id="myNav"class="mobile-menu">
-            <div class="inner">
-                <div class="logo-and-closebtn">
-                    <div class="mobile-nav-logo">
-                        <img src="/img/RainyDays_Logo KVIT.png" alt="logo" class="nav-logo">
-                    </div>
-                    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
-                </div>
-                
-                <ul class="mobile-nav">
-                    <input type="checkbox" class="men-nav-chevron" id="men-chevron">
-                    <label for="men-chevron">
-                        <li>Men </li>
-                        <i class="fas fa-chevron-down"></i>
-                    </label> 
-                    
-                    <div class="mobile-nav-container-men">
-                        <ul>
-                            <li class="mobile-men-nav-item"><a>all products</a></li>
-                            <li class="mobile-men-nav-item"><a>Rain jackets</a></li>
-                            <li class="mobile-men-nav-item"><a>Ski jackets</a></li>
-                            <li class="mobile-men-nav-item"><a>Pro-flex 2.0</a></li>
-                        </ul>
-                    </div>
-                    <input type="checkbox" class="woman-nav-chevron" id="woman-chevron">
-                    <label for="woman-chevron">
-                        <li>Women</li>
-                        <i class="fas fa-chevron-down"></i>
-                    </label>
-                    <div class="mobile-nav-container-woman" >
-                        <ul>
-                            <li class="mobile-woman-nav-item"><a>all products</a></li>
-                            <li class="mobile-woman-nav-item"><a>Rain jackets</a></li>
-                            <li class="mobile-woman-nav-item"><a>Ski jackets</a></li>
-                            <li class="mobile-woman-nav-item"><a>Pro-flex 2.0</a></li>
-                        </ul>
-                    </div>
-                    <li>About Us</li>
-                    <li>Contact us</li>
-                </ul>
-            </div>
-        </div>
     <section class="hero-banner">
         <div class="inner">
             <div class="img-cointainer">
