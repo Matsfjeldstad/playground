@@ -10,8 +10,11 @@
 <script src="https://kit.fontawesome.com/59e647382f.js" crossorigin="anonymous">
 </script>
 <script src="/js/script.js"></script>
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/css/navbar.css">
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="/css/footer.css">
+<title>Document</title>
 </head>
 <body>
     <header>
@@ -56,15 +59,40 @@
     <div id="myNav"class="mobile-menu">
             <div class="inner">
                 <div class="logo-and-closebtn">
-                    <div class="opennav-logo">
+                    <div class="mobile-nav-logo">
                         <img src="/img/RainyDays_Logo KVIT.png" alt="logo" class="nav-logo">
                     </div>
                     <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
                 </div>
                 
-                <ul>
-                    <li>Men <i class="fas fa-chevron-down"></i></li>
-                    <li>Women<i class="fas fa-chevron-down"></i></li>
+                <ul class="mobile-nav">
+                    <input type="checkbox" class="men-nav-chevron" id="men-chevron">
+                    <label for="men-chevron">
+                        <li>Men </li>
+                        <i class="fas fa-chevron-down"></i>
+                    </label> 
+                    
+                    <div class="mobile-nav-container-men">
+                        <ul>
+                            <li class="mobile-men-nav-item"><a>all products</a></li>
+                            <li class="mobile-men-nav-item"><a>Rain jackets</a></li>
+                            <li class="mobile-men-nav-item"><a>Ski jackets</a></li>
+                            <li class="mobile-men-nav-item"><a>Pro-flex 2.0</a></li>
+                        </ul>
+                    </div>
+                    <input type="checkbox" class="woman-nav-chevron" id="woman-chevron">
+                    <label for="woman-chevron">
+                        <li>Women</li>
+                        <i class="fas fa-chevron-down"></i>
+                    </label>
+                    <div class="mobile-nav-container-woman" >
+                        <ul>
+                            <li class="mobile-woman-nav-item"><a>all products</a></li>
+                            <li class="mobile-woman-nav-item"><a>Rain jackets</a></li>
+                            <li class="mobile-woman-nav-item"><a>Ski jackets</a></li>
+                            <li class="mobile-woman-nav-item"><a>Pro-flex 2.0</a></li>
+                        </ul>
+                    </div>
                     <li>About Us</li>
                     <li>Contact us</li>
                 </ul>

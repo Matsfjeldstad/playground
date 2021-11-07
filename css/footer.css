@@ -1,0 +1,40 @@
+footer {
+  background-color: #0a3641;
+  color: #fff;
+}
+
+footer p {
+  font-weight: 300;
+  margin: 0;
+}
+
+footer input {
+  margin-top: 20px;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+}
+
+.sosialmedia ul,
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+.sosialmedia ul li,
+.footer-nav ul li {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  height: 48px;
+  margin-top: 40px;
+}

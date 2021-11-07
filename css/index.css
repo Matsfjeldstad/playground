@@ -12,66 +12,6 @@ body {
   padding: 20px;
 }
 
-header {
-  background-color: #fff;
-  height: 4em;
-}
-
-header .inner {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px 0 20px;
-}
-
-.nav-logo {
-  width: 5.5em;
-}
-
-.left-header {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.desktop-nav {
-  display: none;
-}
-
-.desktop-nav a {
-  color: #444;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.navigation-bar-icons {
-  display: flex;
-  align-content: center;
-  gap: 1.5em;
-}
-
-.icon-and-text span {
-  margin-right: 10px;
-  display: none;
-}
-
-.icon-and-text {
-  display: flex;
-  align-items: center;
-}
-.nav-icon {
-  width: 1.5em;
-}
-
-header input {
-  display: none;
-}
-
-.fa-bars {
-  font-size: 1.4em;
-  line-height: 1.2;
-}
 .mobile-menu {
   height: 0%;
   width: 100%;
@@ -81,8 +21,13 @@ header input {
   top: 0;
   background-color: #4f4f4f;
   color: #fff;
-  overflow: hidden;
+  overflow: scroll;
+  scrollbar-width: 0;
   transition: 0.5s;
+}
+
+.mobile-menu::-webkit-scrollbar {
+  width: 0 !important;
 }
 
 .logo-and-closebtn {
@@ -105,13 +50,52 @@ header input {
 
 .mobile-menu .inner ul li {
   border-bottom: solid 1px #ffffff33;
+  padding: 30px 20px 30px 20px;
+}
+
+.mobile-menu .inner ul li:nth-child(1),
+.mobile-menu .inner ul li:nth-child(2) {
+  border: 0;
+}
+
+.mobile-nav label {
   display: flex;
   justify-content: space-between;
-  padding: 30px 20px 30px 20px;
+  border-bottom: solid 1px #ffffff33;
+  align-items: center;
 }
 
 .mobile-menu .inner ul li:hover {
   font-weight: 800;
+}
+
+.mobile-nav-container-men,
+.mobile-nav-container-woman {
+  background-color: rgb(102, 102, 102);
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.men-nav-chevron,
+.woman-nav-chevron {
+  display: none;
+}
+
+#men-chevron ~ label i,
+#woman-chevron ~ label i {
+  transition: all ease-in-out 0.3s;
+}
+
+#men-chevron:checked ~ .mobile-nav-container-men,
+#woman-chevron:checked ~ .mobile-nav-container-woman {
+  height: 320px;
+}
+
+#men-chevron:checked + label i,
+#woman-chevron:checked + label i {
+  transform: rotate(180deg);
 }
 
 .hero-banner {
@@ -293,47 +277,6 @@ header input {
   font-size: 16px;
   width: 160px;
   height: 40px;
-}
-
-footer {
-  background-color: #0a3641;
-  color: #fff;
-}
-
-footer p {
-  font-weight: 300;
-  margin: 0;
-}
-
-footer input {
-  margin-top: 20px;
-  color: #fff;
-  background-color: transparent;
-  border: 0;
-  border-bottom: 1px solid white;
-  font-size: 16px;
-  width: 100%;
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: row;
-  gap: 5em;
-}
-
-.sosialmedia ul,
-.footer-nav ul {
-  list-style: none;
-  padding: 0;
-}
-.sosialmedia ul li,
-.footer-nav ul li {
-  margin-bottom: 20px;
-}
-
-.footer-logo {
-  height: 48px;
-  margin-top: 40px;
 }
 
 @media screen and (min-width: 768px) {

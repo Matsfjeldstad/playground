@@ -1,0 +1,60 @@
+header {
+  background-color: #fff;
+  height: 4em;
+}
+
+header .inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+
+.nav-logo {
+  width: 5.5em;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-bar-icons {
+  display: flex;
+  align-content: center;
+  gap: 1.5em;
+}
+
+.icon-and-text span {
+  margin-right: 10px;
+  display: none;
+}
+
+.icon-and-text {
+  display: flex;
+  align-items: center;
+}
+.nav-icon {
+  width: 1.5em;
+}
+
+header input {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 1.4em;
+  line-height: 1.2;
+}
